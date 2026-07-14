@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNO Hesaplama Paneli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="neon-bg" aria-hidden="true">
+        <span class="glow glow-mor"></span>
+        <span class="glow glow-turkuaz"></span>
+        <span class="grid-overlay"></span>
+    </div>
+
+    <section id="hosgeldin" class="hosgeldin">
+        <div class="hosgeldin-kart glass">
+            <!-- Ana görünüm -->
+            <div id="hosgeldin-ana" class="hosgeldin-gorunum">
+                <div class="hosgeldin-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="28" stroke="url(#hosgeldinGrad)" stroke-width="2.5"/>
+                        <path d="M32 14v18l12 7" stroke="url(#hosgeldinGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="hosgeldinGrad" x1="0" y1="0" x2="64" y2="64">
+                                <stop offset="0%" stop-color="#9d4edd"/>
+                                <stop offset="100%" stop-color="#00f5d4"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="hosgeldin-badge">GNO Hesaplama Paneli</span>
+                <h1 class="hosgeldin-baslik">Hoşgeldiniz</h1>
+
+                <p class="hosgeldin-amac">
+                    Bu platform, üniversite derslerinizin <strong>kredi</strong> ve <strong>harf notu</strong>
+                    bilgilerini kullanarak Genel Not Ortalamanızı (GNO) hızlı, doğru ve görsel olarak
+                    anlaşılır şekilde hesaplamanız için tasarlanmıştır.
+                </p>
+
+                <div class="hosgeldin-ozellikler">
+                    <div class="ozellik-item">
+                        <span class="ozellik-ikon">◎</span>
+                        <span>Anlık GNO Hesabı</span>
+                    </div>
+                    <div class="ozellik-item">
+                        <span class="ozellik-ikon">◈</span>
+                        <span>Neon Dairesel Gösterge</span>
+                    </div>
+                    <div class="ozellik-item">
+                        <span class="ozellik-ikon">★</span>
+                        <span>Akıllı Motivasyon</span>
+                    </div>
+                </div>
+
+                <div class="hosgeldin-butonlar">
+                    <button type="button" id="basla-btn" class="btn btn-neon">
+                        Panele Başla
+                    </button>
+                    <button type="button" id="nasil-btn" class="btn btn-outline">
+                        Nasıl Çalışır?
+                    </button>
+                    <button type="button" id="hakkinda-btn" class="btn btn-ghost">
+                        Hakkında
+                    </button>
+                </div>
+            </div>
+
+            <!-- Nasıl çalışır görünümü -->
+            <div id="hosgeldin-nasil" class="hosgeldin-gorunum gizli">
+                <h2 class="hosgeldin-alt-baslik">Nasıl Çalışır?</h2>
+                <ol class="hosgeldin-adimlar">
+                    <li>
+                        <span class="adim-no">1</span>
+                        <div>
+                            <strong>Ders ekleyin</strong>
+                            <p>Ders adı, kredi (1–6) ve harf notunu girin.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="adim-no">2</span>
+                        <div>
+                            <strong>GNO hesaplayın</strong>
+                            <p>Sistem, kredi ağırlıklı ortalamayı anında hesaplar.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="adim-no">3</span>
+                        <div>
+                            <strong>Sonucu görün</strong>
+                            <p>Neon dairesel gösterge ve motivasyon mesajıyla performansınızı takip edin.</p>
+                        </div>
+                    </li>
+                </ol>
+                <div class="hosgeldin-butonlar tek-sutun">
+                    <button type="button" id="nasil-basla-btn" class="btn btn-neon btn-block">Hemen Başla</button>
+                    <button type="button" id="nasil-geri-btn" class="btn btn-ghost btn-block">← Geri Dön</button>
+                </div>
+            </div>
+
+            <!-- Hakkında görünümü -->
+            <div id="hosgeldin-hakkinda" class="hosgeldin-gorunum gizli">
+                <h2 class="hosgeldin-alt-baslik">Hakkında</h2>
+                <div class="hosgeldin-hakkinda-metin">
+                    <p>
+                        <strong>GNO Hesaplama Paneli</strong>, öğrencilerin akademik başarılarını
+                        kolayca izlemelerini sağlayan modern bir web uygulamasıdır.
+                    </p>
+                    <p>
+                        FastAPI tabanlı arka uç ve neon temalı ön yüz ile hızlı, güvenilir ve
+                        kullanıcı dostu bir deneyim sunar. GNO formülü standart harf notu
+                        katsayıları üzerinden hesaplanır.
+                    </p>
+                    <div class="hakkinda-etiketler">
+                        <span>FastAPI</span>
+                        <span>Dark & Neon UI</span>
+                        <span>Ücretsiz</span>
+                    </div>
+                </div>
+                <div class="hosgeldin-butonlar tek-sutun">
+                    <button type="button" id="hakkinda-basla-btn" class="btn btn-neon btn-block">Panele Geç</button>
+                    <button type="button" id="hakkinda-geri-btn" class="btn btn-ghost btn-block">← Geri Dön</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="app" class="app gizli">
+        <header class="header glass">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" stroke="url(#brandGrad)" stroke-width="2"/>
+                        <path d="M16 8v8l5 3" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="brandGrad" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#9d4edd"/>
+                                <stop offset="100%" stop-color="#00f5d4"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div>
+                    <h1>GNO Hesaplama Paneli</h1>
+                    <p>Dark & Neon · Ultra dinamik akademik analiz</p>
+                </div>
+            </div>
+            <div class="header-badge">v3.2</div>
+        </header>
+
+        <main class="layout">
+            <section class="panel glass ders-panel">
+                <div class="panel-top">
+                    <div>
+                        <h2>Ders Listesi</h2>
+                        <span class="panel-sub">Ders Adı · Kredi · Harf Notu</span>
+                    </div>
+                    <button type="button" id="ders-ekle-btn" class="btn btn-neon">
+                        <span class="btn-plus">+</span>
+                        Yeni Ders Ekle
+                    </button>
+                </div>
+                <div id="ders-listesi" class="ders-listesi"></div>
+            </section>
+
+            <aside class="panel glass sonuc-panel">
+                <h2>Sonuç Göstergesi</h2>
+
+                <div class="ring-wrap">
+                    <svg class="ring-svg" viewBox="0 0 200 200">
+                        <defs>
+                            <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#9d4edd"/>
+                                <stop offset="50%" stop-color="#c77dff"/>
+                                <stop offset="100%" stop-color="#00f5d4"/>
+                            </linearGradient>
+                            <filter id="neonGlow">
+                                <feGaussianBlur stdDeviation="3" result="blur"/>
+                                <feMerge>
+                                    <feMergeNode in="blur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <circle class="ring-bg" cx="100" cy="100" r="82"/>
+                        <circle id="ring-progress" class="ring-progress" cx="100" cy="100" r="82"
+                                stroke="url(#neonGrad)" filter="url(#neonGlow)"/>
+                    </svg>
+                    <div class="ring-center">
+                        <span class="ring-label">GNO</span>
+                        <span id="gno-deger" class="ring-value">0.00</span>
+                        <span class="ring-max">/ 4.00</span>
+                    </div>
+                </div>
+
+                <div id="motivasyon" class="motivasyon gizli">
+                    <span id="motivasyon-baslik" class="motivasyon-baslik"></span>
+                    <p id="motivasyon-mesaj" class="motivasyon-mesaj"></p>
+                </div>
+
+                <div class="mini-stats">
+                    <div class="mini-stat">
+                        <span>Toplam Kredi</span>
+                        <strong id="toplam-kredi">0</strong>
+                    </div>
+                    <div class="mini-stat">
+                        <span>Ders Sayısı</span>
+                        <strong id="ders-sayisi">0</strong>
+                    </div>
+                </div>
+
+                <button type="button" id="hesapla-btn" class="btn btn-neon btn-block">
+                    GNO Hesapla
+                </button>
+                <p id="hata-mesaji" class="hata gizli"></p>
+            </aside>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
