@@ -1,0 +1,7 @@
+frontend/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+.env
+.venv/
+venv/
