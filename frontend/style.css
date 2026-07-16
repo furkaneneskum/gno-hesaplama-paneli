@@ -770,6 +770,169 @@ body {
     border-radius: 10px;
 }
 
+/* ─── Masaüstü büyütme (mobil dokunulmadı) ─── */
+@media (min-width: 1024px) {
+    .app {
+        max-width: 1320px;
+        padding: 2rem 2.5rem;
+    }
+
+    .header {
+        padding: 1.75rem 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .brand-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .brand h1 {
+        font-size: 1.75rem;
+    }
+
+    .brand p {
+        font-size: 0.95rem;
+    }
+
+    .header-badge {
+        font-size: 0.85rem;
+        padding: 0.45rem 1rem;
+    }
+
+    .layout {
+        grid-template-columns: 1fr 400px;
+        gap: 2rem;
+    }
+
+    .panel {
+        padding: 2rem;
+    }
+
+    .panel-top h2,
+    .sonuc-panel h2 {
+        font-size: 1.35rem;
+    }
+
+    .panel-sub {
+        font-size: 0.88rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.85rem 1.5rem;
+        border-radius: 14px;
+    }
+
+    .btn-block {
+        padding: 1.1rem 1.5rem;
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+
+    .btn-plus {
+        font-size: 1.3rem;
+    }
+
+    .btn-sil {
+        padding: 0.55rem 0.85rem;
+        font-size: 1.25rem;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .ders-kart {
+        grid-template-columns: 1fr 110px 120px 48px;
+        gap: 1rem;
+        padding: 1.25rem 1.35rem;
+    }
+
+    .field label {
+        font-size: 0.75rem;
+    }
+
+    .field input,
+    .field select {
+        padding: 0.85rem 1rem;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+
+    .ring-wrap {
+        width: 240px;
+        height: 240px;
+    }
+
+    .ring-value {
+        font-size: 3.2rem;
+    }
+
+    .ring-label {
+        font-size: 0.8rem;
+    }
+
+    .motivasyon-baslik {
+        font-size: 1.1rem;
+    }
+
+    .motivasyon-mesaj {
+        font-size: 0.95rem;
+    }
+
+    .mini-stat {
+        padding: 1.1rem;
+    }
+
+    .mini-stat strong {
+        font-size: 1.45rem;
+    }
+
+    .hosgeldin-kart {
+        max-width: 620px;
+        padding: 3rem 2.5rem;
+    }
+
+    .hosgeldin-baslik {
+        font-size: 3.2rem;
+    }
+
+    .hosgeldin-amac {
+        font-size: 1rem;
+    }
+
+    .hosgeldin-butonlar .btn {
+        min-width: 160px;
+        padding: 0.9rem 1.6rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .app {
+        max-width: 1480px;
+        padding: 2.5rem 3rem;
+    }
+
+    .layout {
+        grid-template-columns: 1fr 440px;
+        gap: 2.5rem;
+    }
+
+    .ders-kart {
+        grid-template-columns: 1fr 120px 130px 52px;
+        padding: 1.4rem 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.05rem;
+        padding: 0.95rem 1.75rem;
+    }
+
+    .ring-wrap {
+        width: 260px;
+        height: 260px;
+    }
+}
+
 @media (max-width: 860px) {
     .layout { grid-template-columns: 1fr; }
 
